@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .nav {
@@ -20,6 +21,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  cursor: pointer;
 }
 
 .nav .left {
@@ -94,7 +96,8 @@
 
 section {
   height: 70vh;
-  background-image: radial-gradient(#e6ddff, #b8b8df);
+  background-image: -webkit-gradient(linear, right top, left top, from(#6850ab), to(#4a4a67));
+  background-image: linear-gradient(to left, #6850ab, #4a4a67);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +124,9 @@ section .right img {
 }
 
 section .left {
+  color: white;
   width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,15 +142,18 @@ section .left {
 
 section .left h1 {
   font-size: 3.4rem;
+  letter-spacing: 1px;
   padding: 2vw 0;
 }
 
 section .left h4 {
   font-size: 1.4rem;
   padding: 2vw 0;
+  letter-spacing: .6px;
 }
 
 section .left p {
+  letter-spacing: .4px;
   padding: 2vw 0;
 }
 
@@ -165,22 +173,25 @@ section .left button:hover {
   background-color: #232323;
 }
 
-footer {
-  height: 100vh;
+#products {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #faf8f6;
+  padding: 1rem 0 5rem 0;
 }
 
-footer .heading {
+#products .heading {
   color: #35b350;
   font-size: 2rem;
   text-align: center;
-  border-bottom: 5px solid #6b2727;
+  border-bottom: 5px solid #c03e3e;
   margin: 20px auto;
   padding-bottom: 10px;
   width: 20%;
 }
 
-footer .productContainer {
+#products .productContainer {
   height: 100%;
   width: 80vw;
   margin: auto;
@@ -229,5 +240,89 @@ footer .productContainer {
           transform: translateY(-0.4vmax);
   -webkit-box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.36);
           box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.36);
+}
+
+footer {
+  background-color: #131212;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ece8e8;
+  cursor: pointer;
+}
+
+footer div h4 {
+  color: #b72525;
+  letter-spacing: .7px;
+  font-size: 1.5rem;
+}
+
+footer .left {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+footer .left p {
+  text-align: center;
+  margin: 1rem;
+  letter-spacing: .4px;
+}
+
+footer .left img {
+  width: 7rem;
+  margin: 1rem;
+}
+
+footer .mid {
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 1px;
+}
+
+footer .mid p {
+  letter-spacing: .5px;
+  max-width: 70%;
+  margin: 1rem auto;
+}
+
+footer .right {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+footer .right h3 {
+  letter-spacing: .8px;
+  text-decoration: underline;
+}
+
+footer .right a {
+  color: #ece8e8;
+  text-decoration: none;
+  margin: 1rem;
+  letter-spacing: .5px;
 }
 /*# sourceMappingURL=styles.css.map */
